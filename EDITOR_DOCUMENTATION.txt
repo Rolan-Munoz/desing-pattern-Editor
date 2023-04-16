@@ -13,3 +13,8 @@ podremos acceder a traves de su índice.
 
 Llegados a este punto creamos la rama de trabajo feature/undo, en la cual implementaremos los cambios necesarios
 para desarrollar la funcionalidad que deseamos, para cuando este lista, realizar el merge a la rama principal.
+
+El siguiente paso que debemos realizar a continuation es crear la clase Memento, la cual guardara el estado actual y
+tendra un método para obterner dicho estado.
+
+Creamos el siguiente commit dentro de la rama de trabajo "create class memento"
