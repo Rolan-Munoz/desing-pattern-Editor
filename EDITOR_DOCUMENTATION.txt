@@ -19,6 +19,12 @@ tendra un método para obterner dicho estado.
 
 Creamos el siguiente commit dentro de la rama de trabajo "create class memento"
 
+Una vez realizado el merge con la rama principal, habria que proceder a enviar a una rama de arreglo de bugs para
+solventar los problemas que nos hemos creado.
+
+Creamos el ultimo commit en nuestra rama principal que llamaremos "Revision Bug Version" ya que no hemos terminado de
+implementar la funcionalidad que queremos y debe ser revisado.
+
 A continuacion creamos la clase CareTaker, la cual como se ha dicho anteriormente guarda una pila de mementos, y crea
 un método restore para poder obtener el estado anterior.
 
