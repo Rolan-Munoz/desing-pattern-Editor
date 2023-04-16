@@ -18,6 +18,8 @@ public class ConsoleEditor implements Editor {
 
     private final CommandFactory commandFactory = new CommandFactory();
     private ArrayList<String> documentLines = new ArrayList<String>();
+    private CareTaker caretaker = new CareTaker();
+
 
     @Override
     public void run() {
@@ -25,7 +27,7 @@ public class ConsoleEditor implements Editor {
         while (!exit) {
             String commandLine = waitForNewCommand();
             try {
-                Command command = commandFactory.getCommand(commandLine);
+                Command command = commandFactory.getCommand(commandLine,caretaker);
                 command.execute(documentLines);
             } catch (BadCommandException e) {
                 printErrorToConsole("Bad command");

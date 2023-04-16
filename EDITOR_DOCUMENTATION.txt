@@ -37,3 +37,8 @@ de los commandos se cree un nuevo objeto de la clase CareTaker
 
 Creamos el siguiente commit en la rama de trabajo "update Commands and CommandFactory"
 
+Por ultimo mofificamos la clase run para que al lanzar nuestra aplicacion se llame a la clase CareTaker para ir guardando
+y restaurando los estados que queremos.
+
+Creamos el ultimo commit en la rama de trabajo "update:ConsoleEditor"
+

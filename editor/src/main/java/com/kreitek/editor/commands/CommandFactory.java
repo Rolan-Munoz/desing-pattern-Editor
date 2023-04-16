@@ -5,7 +5,7 @@ import com.kreitek.editor.*;
 public class CommandFactory {
     private static final CommandParser commandParser = new CommandParser();
 
-    public Command getCommand(String commandLine) throws BadCommandException, ExitException {
+    public Command getCommand(String commandLine, CareTaker caretaker) throws BadCommandException, ExitException {
         String[] args = commandParser.parse(commandLine);
         return switch (args[0]) {
             case "a" -> createAppendCommand(args[1]);
@@ -17,8 +17,8 @@ public class CommandFactory {
     }
 
     private Command createUndoCommand() {
-        // TODO create undo command
-        return null;
+        CareTaker caretaker = new CareTaker();
+        return new UndoCommand(caretaker);
     }
 
     private Command createDeleteCommand(String lineNumber) {
