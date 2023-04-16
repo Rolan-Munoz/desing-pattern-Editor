@@ -17,6 +17,6 @@ public class CareTaker {
     }
 
     public Memento pop() {
-        return null;
+        return mementos.pop();
     }
 }

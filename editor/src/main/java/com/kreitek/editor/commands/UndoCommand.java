@@ -15,7 +15,7 @@ public class UndoCommand implements Command {
 
     @Override
     public void execute(ArrayList<String> documentLines) {
-        Memento previousState = caretaker.pop();
+        Memento previousState = caretaker.restore();
         if (previousState != null) {
             documentLines.clear();
             documentLines.addAll(previousState.getState());
