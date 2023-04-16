@@ -15,4 +15,8 @@ public class CareTaker {
         }
         return mementos.pop();
     }
+
+    public Memento pop() {
+        return null;
+    }
 }

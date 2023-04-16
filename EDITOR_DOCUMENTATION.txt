@@ -23,3 +23,8 @@ A continuacion creamos la clase CareTaker, la cual como se ha dicho anteriorment
 un método restore para poder obtener el estado anterior.
 
 Creamos el siguiente commit dentr de la rama de trabajo "create class CareTaker"
+
+Una vez creada estas dos clases, el siguiente paso es crear el comando UndoCommand en el paquete Command, el cual
+creara el método undo que sera el encargado de realizar la funcionalidad de reestablecer el punto anterior del estado
+
+Creamos el siguiente commit en la rama de trabajo "create UndoCommand"
