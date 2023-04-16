@@ -18,3 +18,8 @@ El siguiente paso que debemos realizar a continuation es crear la clase Memento,
 tendra un método para obterner dicho estado.
 
 Creamos el siguiente commit dentro de la rama de trabajo "create class memento"
+
+A continuacion creamos la clase CareTaker, la cual como se ha dicho anteriormente guarda una pila de mementos, y crea
+un método restore para poder obtener el estado anterior.
+
+Creamos el siguiente commit dentr de la rama de trabajo "create class CareTaker"
