@@ -1,0 +1,15 @@
+En este ejercicio tenemos como objetivo añadir la funcionalidad "undo" para revertir el último cambio
+realizado a través del editor de texto que facilita la aplicacion.
+
+Para crear dicha funcionalidad se ha analizado con detenimiento el programa que tenemos entre manos y se ha decidido
+que la mejor forma de poder implementar dicha funcionalidad es a traves del uso del patron de diseño comportamental
+MEMENTO.
+
+Memento es un patron de diseño que nos sirve para guardar una instantanea del estado actual, en este caso nos referimos
+a lo que haya creado el originator, en este caso es el editor de texto. Para ello nos es necesario crear la clase memento
+que como se ha dicho guarda la instantanea del estado actual. Acompañando a esta clase debemos crear la clase
+CareTaker, la cual guarda en forma de pila, una serie de mementos formando un historial de los mismos, a los cuales
+podremos acceder a traves de su índice.
+
+Llegados a este punto creamos la rama de trabajo feature/undo, en la cual implementaremos los cambios necesarios
+para desarrollar la funcionalidad que deseamos, para cuando este lista, realizar el merge a la rama principal.
