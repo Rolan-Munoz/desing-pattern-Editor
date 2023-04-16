@@ -23,16 +23,19 @@ public class CommandFactory {
 
     private Command createDeleteCommand(String lineNumber) {
         int number = Integer.parseInt(lineNumber);
-        return new DeleteCommand(number);
+        CareTaker caretaker = new CareTaker();
+        return new DeleteCommand(number, caretaker);
     }
 
     private Command createUpdateCommand(String lineNumber, String text) {
         int number = Integer.parseInt(lineNumber);
-        return new UpdateCommand(text, number);
+        CareTaker caretaker = new CareTaker();
+        return new UpdateCommand(text, number, caretaker);
     }
 
     private Command createAppendCommand(String text) {
-        return new AppendCommand(text);
+        CareTaker caretaker = new CareTaker();
+        return new AppendCommand(text, caretaker);
     }
 
 }

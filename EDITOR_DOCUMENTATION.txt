@@ -28,3 +28,12 @@ Una vez creada estas dos clases, el siguiente paso es crear el comando UndoComma
 creara el método undo que sera el encargado de realizar la funcionalidad de reestablecer el punto anterior del estado
 
 Creamos el siguiente commit en la rama de trabajo "create UndoCommand"
+
+Una vez creado el comando undo, nos disponemos a implementar en los demás commandos la funcionalidad de memento para
+guardar el estado, e imprimir pon pantalla un aviso de estado guardado.
+
+Tambien debemos hacer modificaciones en la commandFactory para usar la clase caretaker y que cada vez que se llame a uno
+de los commandos se cree un nuevo objeto de la clase CareTaker
+
+Creamos el siguiente commit en la rama de trabajo "update Commands and CommandFactory"
+
